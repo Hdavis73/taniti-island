@@ -1,0 +1,412 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito Sans', arial;
+}
+
+.hidden {
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+button,
+a {
+  cursor: pointer;
+}
+
+p {
+  margin: 0px;
+}
+
+section {
+  max-width: 1300px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 3px;
+  bottom: 3px;
+  background-color: rgba(0, 0, 0, 0.58);
+  width: 45px;
+  height: 50px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.back-to-top img {
+  width: 90%;
+  height: 100%;
+}
+
+.home-section {
+  max-width: unset;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.63);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+main {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 94vh;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+main.home-main {
+  background-image: url('imgs/main-beach.jpg');
+}
+
+main.lodging-main {
+  background-image: url('imgs/lodging-main.jpg');
+}
+
+main.dining-main {
+  background-image: url('imgs/rice.jpg')
+}
+
+main.entertainment-main {
+  background-image: url('imgs/sand-3.jpg')
+}
+
+main.transportation-main {
+  background-image: url('imgs/roads.jpg');
+  background-position: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+header .logo {
+  font-size: 1.4rem;
+  font-family: 'Lobster';
+  color: #ffd700;
+}
+
+nav {
+  width: 55%;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+.section-intro {
+  text-align: center;
+  margin-top: 20%;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 800;
+  word-spacing: 10px;
+}
+
+span.taniti {
+  color: #ffd700;
+  font-family: 'lobster';
+  font-size: 1.3em;
+  letter-spacing: 3px;
+}
+
+section.lodging,
+section.attractions,
+section.dining {
+  min-height: 90vh;
+  background-size: cover;
+  padding: 10px 10%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.lodging {
+  background-image: url('imgs/home-hotel.jpg');
+}
+
+section.attractions {
+  background-image: url('imgs/volcano.jpg');
+}
+
+section.dining {
+  background-image: url('imgs/home-dining.jpg');
+}
+
+.sub-section-intro {
+  text-align: center;
+  margin: 12% auto 5px auto;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 800;
+  word-spacing: 10px;
+}
+
+.sub-section-description {
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 85%;
+  margin: auto;
+}
+
+button {
+  background-color: #ffd900;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+section .content {
+  background-color: rgba(0, 0, 0, 0.548);
+  padding: 15px 20px;
+}
+
+.FAQ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FAQ h4 {
+  font-size: 1.7rem;
+}
+
+.FAQ .questions {
+  width: 80%;
+  max-width: 1200px;
+}
+
+.single-question {
+  margin-bottom: 40px;
+}
+
+.single-question h6 {
+  font-size: 1.3rem;
+  color: #ffd700;
+  margin-bottom: 0px;
+}
+
+section h3 {
+  color: #ffd700;
+  font-size: 1.7rem;
+}
+
+section h3.sub-title {
+  margin-top: 100px;
+  margin-bottom: 0px;
+  font-style: italic;
+}
+
+.lodging-options,
+.entertainment,
+.dining-options,
+.transportaion-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-text-group:first-of-type {
+  margin-top: 90px;
+}
+
+.image-text-group:last-of-type {
+  margin-bottom: 90px;
+}
+
+.image-text-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.image-text-group img {
+  width: 55%;
+  max-height: 400px;
+}
+
+.image-text-group .text-title {
+  width: 40%;
+}
+
+.text-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-title span {
+  color: #ffd700;
+  font-size: 2.3rem;
+  letter-spacing: -4px;
+}
+
+.entertainment .text-title span,
+span.text-title-subtext {
+  font-size: 1.1rem;
+  letter-spacing: unset;
+}
+
+.text-title a,
+.caption a {
+  color: #ffd700;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  margin-top: 30px;
+  margin-left: auto;
+}
+
+.text-title a:hover,
+.caption a:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3ms;
+}
+
+.text-title .title-sub-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title-sub-text h4 {
+  font-size: 1.4rem;
+  margin: 0px;
+}
+
+.title-sub-text h4.secondary-header {
+  margin-top: 50px;
+}
+
+.carousel-wrap .arrow {
+  font-size: 7rem;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  font-weight: bold;
+  font-family: 'Lobster';
+  cursor: pointer;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+.carousel-wrap {
+  height: 94vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  /* overflow: hidden; */
+}
+
+.carousel-wrap * {
+  user-select: none;
+}
+
+.carousel {
+  /* display: flex; */
+  height: 100%;
+  width: 100vw;
+}
+
+.carousel img {
+  width: 100vw;
+  height: 100%;
+  /* position: absolute; */
+  /* display: none; */
+  /* flex-shrink: 0; */
+}
+
+.carousel .image-caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.carousel .image-caption.active {
+  display: unset;
+}
+
+.image-caption {
+  display: flex;
+  justify-content: center;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.315);
+  width: 50%;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  left: 25%;
+}
+
+.caption h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.caption a {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  font-size: 1.1rem;
+}
+
+.image-text-group.transport .text-title{
+  margin-top: 5%;
+}
