@@ -70,24 +70,28 @@ main {
 }
 
 main.home-main {
-  background-image: url('imgs/main-beach.jpg');
+  background-image: url('imgs/home-page/main-beach.jpg');
 }
 
 main.lodging-main {
-  background-image: url('imgs/lodging-main.jpg');
+  background-image: url('imgs/lodging-page/lodging-main.jpg');
 }
 
 main.dining-main {
-  background-image: url('imgs/rice.jpg')
+  background-image: url('imgs/dining-page/rice.jpg')
 }
 
 main.entertainment-main {
-  background-image: url('imgs/sand-3.jpg')
+  background-image: url('imgs/entertainment-page/sand-3.jpg')
 }
 
 main.transportation-main {
-  background-image: url('imgs/roads.jpg');
+  background-image: url('imgs/transportation-page/roads.jpg');
   background-position: center;
+}
+
+section {
+  position: relative;
 }
 
 header {
@@ -146,15 +150,26 @@ section.dining {
 }
 
 section.lodging {
-  background-image: url('imgs/home-hotel.jpg');
+  background-image: url('imgs/home-page/home-hotel.jpg');
 }
 
 section.attractions {
-  background-image: url('imgs/volcano.jpg');
+  background-image: url('imgs/home-page/volcano.jpg');
 }
 
 section.dining {
-  background-image: url('imgs/home-dining.jpg');
+  background-image: url('imgs/home-page/home-dining.jpg');
+}
+
+.section-img-caption {
+  background-color: rgba(0, 0, 0, 0.247);
+  color: white;
+  padding: 5px 10px;
+  /* border-radius: 5px; */
+  position: absolute;
+  bottom: 3px;
+  left: 1px;
+  font-size: .6rem;
 }
 
 .sub-section-intro {
@@ -258,6 +273,7 @@ section h3.sub-title {
   display: flex;
   justify-content: space-between;
   margin-top: 150px;
+  position: relative;
 }
 
 .image-text-group img {
@@ -409,4 +425,6 @@ span.text-title-subtext {
 
 .image-text-group.transport .text-title{
   margin-top: 5%;
+  border: 2px solid #ffd700;
+  padding: 10px 20px;
 }
